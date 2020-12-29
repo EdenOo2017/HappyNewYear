@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(224, 235, 235);">
+   <head>
+      <title>New Year Count Down</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"/> 
+      <script src="/socket.io/socket.io.js"></script> 
+      <script src="/script.js"></script>
+   </head>
+   <body style="background-color: rgb(224, 235, 235);">
+      <div class="container">
+         <div class="panel panel-default" style="margin-top: 15%; background: lightcyan;">
+            <div class="panel-body">
+               <h2 style="margin-left:25px">New Year Count Down</h2>
+               <form method="POST" action="/data" name='myform' id="myForm" class="form-horizontal ws-validate" style="margin: 30px">
+                  <div class="form-group">
+                     <label for="name" class="control-label">Name:</label>
+                     <input type="name" name="name" class="form-control" id="name" maxlength="30" placeholder="Enter your name" required/>
+                  </div>
+                  <div class="form-group">                     
+                     <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
